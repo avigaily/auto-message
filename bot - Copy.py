@@ -32,7 +32,7 @@ def select_random_message():
 def send_message():
     hour = datetime.now().hour
     currmin = datetime.now().minute
-    minute = random.randint((currmin + 1) % 60, (currmin + 3) % 60)
+    minute = random.randint((currmin + 1) % 60, (currmin + 30) % 60)
     phone = "+972****" # Enter reciver phone here
 
     message = select_random_message()
